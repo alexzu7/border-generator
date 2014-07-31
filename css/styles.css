@@ -1,0 +1,45 @@
+html, body{
+	background: #fff;
+	font-family: 'arial';
+	font-size: 13px;
+	color: #111;
+}
+
+.center{
+	width: 700px;
+	margin: 0 auto;
+}
+
+p{
+	padding: 0;
+	margin: 0 0 10px 0;
+}
+
+.title{
+	padding-left: 10px;
+}
+
+.menu_left{
+	float: left;
+	width: 300px;
+	min-height: 300px;
+	margin: 0 25px 0 0;
+	padding: 10px 0 0 0;
+	background: #efefef;
+}
+
+.menu_right{
+	float: right;
+	width: 10px;
+}
+
+.preview{
+	width: 320px;
+	min-height: 400px;
+	float: left;
+	border: 1px solid #000;
+}
+
+.preview p{
+	padding: 10px 10px 0 10px;
+}

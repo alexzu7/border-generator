@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Generator</title>
+		<link href="css/styles.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<div class="center">
+			<div class="menu_left">
+				
+				<p class="title">Border Width:</p>
+				<p class="range"><input type="range" id="border-width-range" min="1" max="10" step="1" value="1" /></p>
+				
+				<p class="title">Border Color:</p>
+				<p class="range"><input type="range" id="border-color-range" min="0" max="360" step="1" value="0" /></p>
+				
+				<p class="title">Border Type:</p>
+				<p style="padding-left: 10px">
+					<label for="border-solid">Solid</label> <input type="radio" id="border-solid" checked="checked" name="border-style" />
+					<label for="border-dashed">Dashed</label> <input type="radio" id="border-dashed" name="border-style" />
+					<label for="border-dotted">Dotted</label> <input type="radio" id="border-dotted" name="border-style" />
+				</p>				
+			</div>         
+			
+			<div class="preview" id="preview">
+				<p><img src="img/img.png" alt="" title="" /></p>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+			</div>
+			
+			<div class="menu_right">
+				<pre>
+.preview{
+	width: 320px;
+	min-height: 400px;
+	float: left;
+	border: <span id="preview-border-width-val">1</span>px <span id="preview-border-style-val">solid</span> <span id="border-color-range-val">rgb(0, 0, 0)</span>;
+}
+				</pre>
+			</div>
+		</div>
+		
+		<script src="js/default.js"></script>
+	</body>
+</html>
